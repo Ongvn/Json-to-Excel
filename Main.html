@@ -3,33 +3,17 @@
 <head>
 	<title>Main</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../script/convert.js"></script>
+	
 </head>
 <body>
 
 <p>Demo Json:</p>
+<div id="tableHolder"></div>
+<input id="title" type="checkbox" name="title"> Custom title <br/>
+<input type="button" id="test" onClick="CreateExcel();" value="download" />
+<a href="#" id="download"></a>
 
-<script>
-	var dm = document.getElementById("demo");
-	var myObj = [
-	{	
-		"a":10,
-		"b":20,
-		"c":30
-	},
-	{
-		"a":21,
-		"b":31,
-		"c":41
-	},
-	{
-		"a":59,
-		"b":69,
-		"c":39
-	}
-	];
-	console.log(myObj);
-</script>
+<script type="text/javascript" src="../script/convert.js"></script>
 
 </body>
 </html>
